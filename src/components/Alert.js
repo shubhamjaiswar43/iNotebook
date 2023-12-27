@@ -8,7 +8,7 @@ const Alert = (props) => {
         if (props.id === 'logout') {
             localStorage.removeItem('auth-token');
             setNotes([]);
-            navigate('/iNotebook-React/login');
+            navigate('/login');
         } else {
             deleteNote(props.id);
         }

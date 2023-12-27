@@ -38,7 +38,7 @@ function Signup(props) {
           props.updateLoading(90);
           sendAlert(response.msg, "success");
           props.updateLoading(100);
-          navigate('/iNotebook-React/login');
+          navigate('/login');
         }
       } else {
         sendAlert("Password and Confirm Password Should Be Same!!!", "danger");

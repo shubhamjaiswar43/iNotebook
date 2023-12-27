@@ -11,13 +11,13 @@ function GetNote() {
     useEffect(() => {
         if(!localStorage.getItem('auth-token')){
             sendAlert("Please Login/Signup First","danger");
-            navigate('/iNotebook-React/login');
+            navigate('/login');
         }else{
             try{
                 getNotes();
             }catch(err){
                 sendAlert("Something Went Wrong,Please Login Again","danger");
-                navigate('/iNotebook-React/login');
+                navigate('/login');
             }
         }
         //eslint-disable-next-line

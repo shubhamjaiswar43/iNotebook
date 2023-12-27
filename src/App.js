@@ -48,12 +48,11 @@ const App = () => {
 				{myAlert.isAlert && <Alert message={myAlert.message} type={myAlert.type} confirm={myAlert.confirm} removeAlert={removeAlert} id={myAlert.id} />}
 				<div className="container">
 					<Routes>
-						<Route exact path="/" element={<h1 className='my-3 text-center'>Welcome To iNotebook</h1>} />
-						<Route exact path="/iNotebook-React" element={<Home />} />
-						<Route exact path="/iNotebook-React/login" element={<Login updateLoading={updateLoading} />} />
-						<Route exact path="/iNotebook-React/signup" element={<Signup updateLoading={updateLoading} />} />
-						<Route exact path="/iNotebook-React/about" element={<About />} />
-						<Route exact path="/iNotebook-React/userdetails" element={<UserDetails updateLoading={updateLoading} />} />
+						<Route exact path="/" element={<Home />} />
+						<Route exact path="/login" element={<Login updateLoading={updateLoading} />} />
+						<Route exact path="/signup" element={<Signup updateLoading={updateLoading} />} />
+						<Route exact path="/about" element={<About />} />
+						<Route exact path="/userdetails" element={<UserDetails updateLoading={updateLoading} />} />
 					</Routes>
 				</div>
 			</Router>

@@ -31,7 +31,7 @@ function Login(props) {
                 localStorage.setItem('auth-token', response.userToken);
                 sendAlert("Login Successfully", "success");
                 props.updateLoading(100);
-                navigate('/iNotebook-React');
+                navigate('/');
             }
         } catch (err) {
             props.updateLoading(50);
